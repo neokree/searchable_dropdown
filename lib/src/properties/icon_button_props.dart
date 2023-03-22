@@ -21,9 +21,6 @@ class IconButtonProps {
   final bool enableFeedback;
   final BoxConstraints? constraints;
   final bool isVisible;
-  final ButtonStyle? style;
-  final bool? isSelected;
-  final Widget? selectedIcon;
   final Function()? onPressed;
 
   const IconButtonProps({
@@ -47,8 +44,5 @@ class IconButtonProps {
     this.enableFeedback = false,
     this.constraints,
     this.onPressed,
-    this.style,
-    this.isSelected,
-    this.selectedIcon,
   }) : assert(splashRadius == null || splashRadius > 0);
 }

@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+
 class UserModel {
   final String id;
   final DateTime createdAt;
@@ -5,10 +7,10 @@ class UserModel {
   final String avatar;
 
   UserModel({
-    required this.id,
-    required this.createdAt,
-    required this.name,
-    required this.avatar,
+    @required this.id,
+    @required this.createdAt,
+    @required this.name,
+    @required this.avatar,
   });
 
   factory UserModel.fromJson(Map<String, dynamic> json) {

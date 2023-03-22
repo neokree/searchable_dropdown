@@ -22,9 +22,6 @@ class DropdownButtonProps extends IconButtonProps {
     super.tooltip,
     super.enableFeedback = false,
     super.constraints,
-    super.style,
-    super.isSelected,
-    super.selectedIcon,
     super.onPressed,
   });
 }
